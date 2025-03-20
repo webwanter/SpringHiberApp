@@ -19,18 +19,18 @@ public class User {
     private Long id;
 
     @Column(name = "name")
-    @NotEmpty(message = "Name should't be empty")
+    @NotEmpty(message = "Name should not be empty")
     @Size(min = 2, max = 30, message = "Name size should be between 2 and 30 characters")
     private String firstName;
 
     @Column(name = "last_name")
-    @NotEmpty(message = "Surname should't be empty")
+    @NotEmpty(message = "Surname should not be empty")
     @Size(min = 2, max = 30, message = "Surname size should be between 2 and 30 characters")
     private String lastName;
 
 
     @Column(name = "email")
-    @NotEmpty(message = "Email should't be empty")
+    @NotEmpty(message = "Email should not be empty")
     @Email(message = "Email should be valid")
     private String email;
 
@@ -82,8 +82,8 @@ public class User {
     public String toString() {
         return
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + "'";
+                        ", firstName='" + firstName + '\'' +
+                        ", lastName='" + lastName + '\'' +
+                        ", email='" + email + "'";
     }
 }

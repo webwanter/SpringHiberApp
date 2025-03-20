@@ -1,6 +1,5 @@
 package web.dao;
 
-import org.springframework.transaction.annotation.Transactional;
 import web.model.User;
 import org.springframework.stereotype.Repository;
 
